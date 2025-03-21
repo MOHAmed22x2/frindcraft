@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📜 شرح اللعبة | Friends Craft</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: #444;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #ffcc00;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .commands-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .commands-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .commands-box h3 {
+            font-size: 30px;
+            color: #ffbb00;
+            margin-bottom: 20px;
+        }
+
+        .command {
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(45deg, #ff7b00, #ffbb00);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(255, 187, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(255, 187, 0, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>📜 شرح اللعبة | Friends Craft</h1>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        <h2>أوامر EssentialsX في السيرفر</h2>
+
+        <div class="commands-container">
+            <!-- أوامر الأدمن -->
+            <div class="commands-box">
+                <h3>أوامر الأدمن (الإدارة)</h3>
+                <div class="command">/ban [اللاعب] - لحظر اللاعب من السيرفر.</div>
+                <div class="command">/kick [اللاعب] - لطرد اللاعب من السيرفر.</div>
+                <div class="command">/tp [اللاعب] [اللاعب] - للانتقال بين لاعبين.</div>
+                <div class="command">/give [اللاعب] [الموضوع] [الكمية] - لإعطاء اللاعب شيء معين.</div>
+                <div class="command">/setspawn - لتعيين نقطة البداية في مكان معين.</div>
+                <div class="command">/gamemode [اللاعب] [الوضع] - لتغيير وضع اللاعب (بقاء/إبداع/مغامرة).</div>
+                <div class="command">/mute [اللاعب] - لإيقاف دردشة اللاعب.</div>
+                <div class="command">/broadcast [الرسالة] - لإرسال رسالة لجميع اللاعبين.</div>
+                <div class="command">/fly - لتفعيل وضع الطيران للإدارة (السماح للطيران في أي مكان).</div> <!-- أمر fly مع الشرح -->
+            </div>
+
+            <!-- أوامر اللاعبين العاديين -->
+            <div class="commands-box">
+                <h3>أوامر اللاعبين العاديين</h3>
+                <div class="command">/home - للانتقال إلى المنزل.</div>
+                <div class="command">/sethome - لتعيين مكان المنزل.</div>
+                <div class="command">/spawn - للانتقال إلى نقطة البداية.</div>
+                <div class="command">/tpa [اللاعب] - لإرسال طلب نقل إلى لاعب آخر.</div>
+                <div class="command">/msg [اللاعب] [الرسالة] - لإرسال رسالة خاصة للاعب.</div>
+                <div class="command">/warps - لعرض النقاط التي تم وضعها بواسطة الإدارة.</div>
+                <div class="command">/help - لعرض قائمة الأوامر المتاحة.</div>
+                <div class="command">/setwarp [الاسم] - لإنشاء نقطة انتقال خاصة.</div>
+                <div class="command">/pay [اللاعب] [المبلغ] - لتحويل الأموال إلى لاعب آخر. استخدم هذا الأمر عندما ترغب في إرسال بعض المال للاعب آخر داخل اللعبة.</div> <!-- أمر pay مع الشرح -->
+            </div>
+        </div>
+
+        <!-- زر العودة للصفحة الرئيسية -->
+        <a href="index.html" class="back-button">🔙 العودة للصفحة الرئيسية</a>
+    </div>
+
+</body>
+</html>

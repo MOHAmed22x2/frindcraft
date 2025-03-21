@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡 شراء بلوكات حماية</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: white;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .protection-option {
+            background-color: #444;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .protection-option h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .protection-option p {
+            color: #ccc;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #ffaa00;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #ffaa00;
+        }
+
+        /* إخفاء زر ديسكورد في البداية */
+        .discord-button {
+            display: none;
+            background-color: #7289da;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .discord-button:hover {
+            background-color: #5b6eaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛡 شراء بلوكات حماية</h1>
+    </header>
+
+    <div class="container">
+        <div class="protection-option">
+            <h3>3,000 بلوك حماية</h3>
+            <p>السعر: 300,000 كردت</p>
+            <a href="#" class="buy-button" onclick="showDiscordButton()">💳 شراء الآن</a>
+            <a href="https://discord.gg/JaQFXXX8" class="discord-button" target="_blank">الذهاب إلى ديسكورد</a>
+        </div>
+
+        <div class="protection-option">
+            <h3>10,000 بلوك حماية</h3>
+            <p>السعر: 1,000,000 كردت</p>
+            <a href="#" class="buy-button" onclick="showDiscordButton()">💳 شراء الآن</a>
+            <a href="https://discord.gg/JaQFXXX8" class="discord-button" target="_blank">الذهاب إلى ديسكورد</a>
+        </div>
+
+        <div class="protection-option">
+            <h3>30,000 بلوك حماية</h3>
+            <p>السعر: 3,000,000 كردت</p>
+            <a href="#" class="buy-button" onclick="showDiscordButton()">💳 شراء الآن</a>
+            <a href="https://discord.gg/JaQFXXX8" class="discord-button" target="_blank">الذهاب إلى ديسكورد</a>
+        </div>
+
+        <br>
+        <a href="shop.html" class="back-button">🏠 العودة إلى المتجر</a>
+    </div>
+
+    <script>
+        function showDiscordButton() {
+            // إظهار زر ديسكورد عند الضغط على شراء
+            const discordButtons = document.querySelectorAll('.discord-button');
+            discordButtons.forEach(button => button.style.display = 'inline-block');
+        }
+    </script>
+
+</body>
+</html>
